@@ -41,11 +41,11 @@ task("send", "Send ETH to an address")
 
 })
 
-task("contract", "Current block number", async (params, hre) => {
+task("contract", "Deploy a contract", async (params, hre) => {
     const contractFactory = await hre.ethers.getContractFactory("Lock")
     const contract = await contractFactory.deploy(1738989710)
 
-    console.log("Contract dedployed to:", await contract.getAddress())
+    console.log("Contract deployed to:", await contract.getAddress())
 
     const tx = await contract.withdraw().catch(err => console.log(err.message))
     console.log("Tx send!")
