@@ -1,4 +1,4 @@
-# Solidity Playground
+# Smart Contract Development Playground
 This collection showcases various  exercises and projects I've developed to enhance my understanding of Ethereum smart contract development using Solidity, Hardhat and ethers.js.
 
 ## Repository Structure
