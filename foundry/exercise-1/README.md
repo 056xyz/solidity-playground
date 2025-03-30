@@ -1,66 +1,26 @@
-## Foundry
-
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Homework
+1. Test Setup
+    a. Create a test file structure using Foundry's testing framework
+    b. Create helper functions for common operations
+2. Test Contract State and Initialization
+    a. Verify initial contract states
+3. Test TicketNFT Functionality
+    a. Test NFT minting
+    b. Test ownership transfers
+    c. Verify ERC721 compliance
+    d. Test enumeration functionality
+    e. Test proper access control
+4. Test RaffleHouse Functionality
+    a. Test raffle creation
+    b. Test ticket purchasing
+    c. Test winner selection
+    d. Test prize claiming
+    e. Verify raffle state transitions
+5. Test Integration and Interaction Flow
+6. Test Events and Error Messages
+7. Measure Coverage
+8. Gas Optimization
+    a. Measure gas costs for all operations using Foundry's gas reporting
+    b. Compare gas usage in different scenarios
+    c. Document gas-intensive operations
+    d. Suggest optimization strategies

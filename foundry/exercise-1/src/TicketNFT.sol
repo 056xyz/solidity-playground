@@ -58,4 +58,10 @@ contract TicketNFT is ERC721, ERC721Enumerable, Ownable2Step {
     ) internal override(ERC721, ERC721Enumerable) {
         super._increaseBalance(account, value);
     }
+
+    function getNextTokenId() public view returns (uint id){
+        id = _nextTokenId;
+    }
+
+
 }
