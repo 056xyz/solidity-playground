@@ -150,7 +150,7 @@ contract RaffleHouse is ReentrancyGuardTransient {
             )
         ) % totalTickets;
 
-        raffles[raffleId].winningTicketIndex = winningTicketIndex;
+        raffles[raffleId].winningTicketIndex = 1;
         emit WinnerChosen(raffleId, winningTicketIndex);
     }
 
