@@ -149,8 +149,8 @@ contract RaffleHouse is ReentrancyGuardTransient {
                 )
             )
         ) % totalTickets;
-
-        raffles[raffleId].winningTicketIndex = 1;
+        //bug when there is 1 participant, winnerTicketIndex is still 0 after drawing the
+        raffles[raffleId].winningTicketIndex = winningTicketIndex;
         emit WinnerChosen(raffleId, winningTicketIndex);
     }
 
